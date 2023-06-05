@@ -1,0 +1,39 @@
+.dateInput {
+  position: relative;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    height: 40px;
+    width: 200px;
+    border: 1px solid #d3d4d8;
+    border-radius: 2px;
+    cursor: pointer;
+    .button {
+      width: 40px;
+      height: 40px;
+      padding: 0px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__selection {
+    position: absolute;
+    top: cal(18px+40px);
+    width: 200px;
+    padding: 14px 14px;
+    background: #ffffff;
+    border: 1px solid #d3d4d8;
+    box-shadow: 0px 0px 10px rgba(44, 76, 239, 0.06), 0px 1px 10px rgba(40, 42, 52, 0.12);
+    border-radius: 2px;
+
+    .wrapper {
+      display: flex;
+      flex-flow: wrap;
+    }
+  }
+}

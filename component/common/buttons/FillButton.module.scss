@@ -1,0 +1,60 @@
+@import '~styles/_mixin.scss';
+
+.button {
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &.size--large {
+    padding: 0.929rem 1.714rem 0.929rem 1.429rem;
+    height: 2.857rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.438rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.813rem;
+    text-align: center;
+  }
+
+  &.size--regular {
+    padding: 0.813rem 2.5rem 0.813rem 2.5rem;
+    height: 3rem;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+}
+
+// color
+.primary {
+  color: #ffffff;
+  background: #313234;
+}
+
+.error {
+  color: #ffffff;
+  background: #cb1c1c;
+}
+
+@include mobile {
+  .button.size--large {
+    padding: 0px;
+    min-width: 8.357rem;
+    height: 2.5rem;
+    font-size: 0.857rem;
+    font-weight: 400;
+    line-height: 1.214rem;
+    text-align: center;
+  }
+  .button.size--regular {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    height: 2.5rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+}
