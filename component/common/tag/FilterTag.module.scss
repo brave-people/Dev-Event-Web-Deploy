@@ -1,0 +1,90 @@
+@import '~styles/_mixin.scss';
+@import '~styles/_color.scss';
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+  border-radius: 1000px;
+
+  &.size--regular {
+    font-size: 1rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    padding: 0.786rem 1.143rem;
+    border-radius: 1000px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &.color--default {
+    border: 1px solid #d3d4d8;
+    color: #313234;
+    background-color: #ffffff;
+    font-weight: 500;
+  }
+
+  &.color--clicked {
+    background: #eff1ff;
+    color: #2c4cef;
+    border: 1px solid #2c4cef;
+    font-weight: 700;
+  }
+}
+
+@include tablet {
+  .tag.size--large {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 6px 18px;
+    height: 28px;
+    border-radius: 10px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .tag.size--regular {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 24px;
+    font-size: 13px;
+    line-height: 12px;
+    border-radius: 8px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@include mobile {
+  .tag.size--large {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 9px 15px;
+    height: 34px;
+    border-radius: 10px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .tag.size--regular {
+    padding: 4.5px 7.5px;
+    height: 20px;
+    font-size: 11px;
+    line-height: 12px;
+    border-radius: 6px;
+    max-width: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
